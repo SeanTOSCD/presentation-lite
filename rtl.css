@@ -1,0 +1,46 @@
+/*
+Theme Name: Presentation Lite
+*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+.header-menu {
+	left: 0;
+}
+.top-bar .social-links,
+.single-post-footer .social-links {
+	position: static;
+}
+.single-post-footer .social-links {
+	margin-bottom: 10px
+}
+.post-footer-author .avatar {
+	margin: 6px 0 6px 6px;
+}
+.byline,
+.posted-on,
+.comments-link {
+	float: right;
+	margin-left: 30px;
+	margin-right: 0;
+}
+.entry-meta:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.entry-header .entry-meta .fa, 
+.entry-meta .tax-links .fa {
+	margin-left: 6px;
+}
+.nav-previous {
+	text-align: left;
+}
+.nav-previous .fa,
+.nav-next .fa {
+	display: none;
+}
