@@ -2,6 +2,7 @@
 
 Created by Sean Davis: http://seandavis.co/
 Full version: http://buildwpyourself.com/downloads/presentation/
+Theme demo: http://demo.sdavismedia.com/presentation-lite/
 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
