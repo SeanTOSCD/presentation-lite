@@ -37,19 +37,19 @@ Certainly! Here's exactly what you need to do.
 . . . . . . . . . . copy what's below . . . . . . . . . . . . 
 
 
-	/*
-		Theme Name: your_child_theme_name
-		Author: your_name
-		Author URI: 
-		Description: Child theme for Presentation Lite
-		Template: presentation-lite
-	*/
-	
-	@import url("../presentation-lite/style.css");
-	
-	/*--------------------------------------------------------------
-	Theme customization starts here
-	--------------------------------------------------------------*/
+/*
+	Theme Name: your_child_theme_name
+	Author: your_name
+	Author URI: 
+	Description: Child theme for Presentation Lite
+	Template: presentation-lite
+*/
+
+@import url("../presentation-lite/style.css");
+
+/*--------------------------------------------------------------
+Theme customization starts here
+--------------------------------------------------------------*/
 
 
 . . . . . . . . . . copy what's above . . . . . . . . . . . . 
