@@ -165,7 +165,7 @@ add_filter( 'post_class', 'presentation_lite_first_post_class' );
  * Only show regular posts in search results
  */
 function presentation_lite_search_filter( $query ) {
-	if ( $query->is_search && !is_admin() )
+	if ( $query->is_search && ! is_admin() )
 		$query->set( 'post_type', 'post' );
 	return $query;
 }

@@ -71,6 +71,10 @@ Yup. Any of the template files in the root of Presentation Lite can be copied to
 
 == Changelog ==
 
+= 1.0.4 =
+* Tweak: Improved translation strings
+* Tweak: Updated language files
+
 = 1.0.3 =
 * Added: custom menu fallback for both theme menus
 * Tweak: adjusted admin page CSS file loading method

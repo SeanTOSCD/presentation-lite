@@ -23,8 +23,8 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h3 class="comments-title">
 			<?php
-				printf( _nx( 'One response to <span class="response-title">%2$s</span>', '%1$s responses to <span class="response-title">%2$s</span>', get_comments_number(), 'comments title', 'presentation_lite' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+				printf( _nx( 'One response to %2$s', '%1$s responses to %2$s', get_comments_number(), 'comments title', 'presentation_lite' ),
+					number_format_i18n( get_comments_number() ), '<span class="response-title">' . get_the_title() . '</span>' );
 			?>
 		</h3>
 
@@ -97,11 +97,11 @@ if ( post_password_required() ) {
 				'comment_notes_before'	=> '',	
 				'comment_notes_after'	=> '',	
 				'fields'				=> apply_filters( 'comment_form_default_fields', array(
-					'author'				=> '<p class="comment-form-author comment-form-field"><input id="author" name="author" type="text" placeholder="Name"' . $aria_req . ' /></p>',
+					'author'				=> '<p class="comment-form-author comment-form-field"><input id="author" name="author" type="text" placeholder="' . __( 'Name', 'presentation_lite' ) . '"' . $aria_req . ' /></p>',
 				
-					'email'					=> '<p class="comment-form-email comment-form-field"><input id="email" name="email" type="text" placeholder="Email"' . $aria_req . ' /></p>',
+					'email'					=> '<p class="comment-form-email comment-form-field"><input id="email" name="email" type="text" placeholder="' . __( 'Email', 'presentation_lite' ) . '"' . $aria_req . ' /></p>',
 				
-					'url'					=> '<p class="comment-form-url comment-form-field"><input id="url" name="url" type="text" placeholder="Website URL" /></p>'
+					'url'					=> '<p class="comment-form-url comment-form-field"><input id="url" name="url" type="text" placeholder="' . __( 'Website URL', 'presentation_lite' ) . '" /></p>'
 					)
 				),
 			) 

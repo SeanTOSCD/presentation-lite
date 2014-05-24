@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presentation Lite\n"
-"POT-Creation-Date: 2014-04-25 10:46-0600\n"
-"PO-Revision-Date: 2014-04-25 10:46-0600\n"
+"POT-Creation-Date: 2014-05-23 20:48-0600\n"
+"PO-Revision-Date: 2014-05-23 20:49-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -65,8 +65,8 @@ msgstr ""
 #: comments.php:26
 #, php-format
 msgctxt "comments title"
-msgid "One response to <span class=\"response-title\">%2$s</span>"
-msgid_plural "%1$s responses to <span class=\"response-title\">%2$s</span>"
+msgid "One response to %2$s"
+msgid_plural "%1$s responses to %2$s"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -115,6 +115,18 @@ msgid ""
 "this account\">Log out?</a>"
 msgstr ""
 
+#: comments.php:100
+msgid "Name"
+msgstr ""
+
+#: comments.php:102
+msgid "Email"
+msgstr ""
+
+#: comments.php:104
+msgid "Website URL"
+msgstr ""
+
 #: content/content-none.php:9
 msgid "Nothing Found"
 msgstr ""
@@ -150,7 +162,7 @@ msgstr ""
 msgid "written by "
 msgstr ""
 
-#: content/content.php:31 functions.php:133
+#: content/content.php:31 functions.php:147
 msgid "Read More"
 msgstr ""
 
@@ -170,6 +182,10 @@ msgstr ""
 msgid "Primary Sidebar"
 msgstr ""
 
+#: functions.php:127
+msgid "Home"
+msgstr ""
+
 #: header.php:52
 msgid "Menu"
 msgstr ""
@@ -178,12 +194,12 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/admin.php:35
+#: inc/admin.php:33
 #, php-format
 msgid "Upgrade to the Full-Featured Version of %1$s!"
 msgstr ""
 
-#: inc/admin.php:37
+#: inc/admin.php:35
 #, php-format
 msgid ""
 "You are currently using the <strong>FREE</strong> version of %1$s. Upgrade "
@@ -193,47 +209,47 @@ msgid ""
 "and more!"
 msgstr ""
 
-#: inc/admin.php:40
+#: inc/admin.php:38
 #, php-format
 msgid "View the Full Version of %1$s"
 msgstr ""
 
-#: inc/admin.php:41
+#: inc/admin.php:39
 #, php-format
 msgid ""
 " users get 20% off by using Coupon Code: <strong>LITE20</strong> at checkout."
 msgstr ""
 
-#: inc/admin.php:54
+#: inc/admin.php:52
 #, php-format
 msgid "How to Create a Child Theme for %1$s"
 msgstr ""
 
-#: inc/admin.php:56
+#: inc/admin.php:54
 msgid ""
 "Through FTP, navigate to <code>your_website/wp-content/themes/</code> and in "
 "that directory, create a new folder as the name of your child theme. "
 "Something like <code>presentation-lite-child</code> is perfectly fine."
 msgstr ""
 
-#: inc/admin.php:57
+#: inc/admin.php:55
 msgid ""
 "Inside of your new folder, create a file called <code>style.css</code> (the "
 "name is NOT optional)."
 msgstr ""
 
-#: inc/admin.php:58
+#: inc/admin.php:56
 msgid "Inside of your new <code>style.css</code> file, add the following CSS:"
 msgstr ""
 
-#: inc/admin.php:76
+#: inc/admin.php:74
 msgid ""
 "You may edit all of what you pasted EXCEPT for the <code>Template</code> "
 "line as well as the <code>@import</code> line. Leave those two lines alone "
 "or the child theme will not work properly."
 msgstr ""
 
-#: inc/admin.php:77
+#: inc/admin.php:75
 msgid ""
 "With your new child theme folder in place and the above CSS pasted inside of "
 "your <code>style.css</code> file, go back to your WordPress dashboard and "
@@ -241,14 +257,14 @@ msgid ""
 "the name you chose). Activate your theme."
 msgstr ""
 
-#: inc/admin.php:78
+#: inc/admin.php:76
 msgid ""
 "With your child theme activated, you can edit its stylesheet all you like. "
 "You may also create a <code>functions.php</code> file in the root of your "
 "child theme to add custom PHP."
 msgstr ""
 
-#: inc/admin.php:79
+#: inc/admin.php:77
 msgid "Enjoy!"
 msgstr ""
 
@@ -317,11 +333,11 @@ msgid "Posts navigation"
 msgstr ""
 
 #: inc/template-tags.php:25
-msgid "<i class=\"fa fa-arrow-circle-left\"></i>Older posts"
+msgid "Older posts"
 msgstr ""
 
 #: inc/template-tags.php:29
-msgid "Newer posts<i class=\"fa fa-arrow-circle-right\"></i>"
+msgid "Newer posts"
 msgstr ""
 
 #: inc/template-tags.php:54
@@ -330,12 +346,12 @@ msgstr ""
 
 #: inc/template-tags.php:57
 msgctxt "Previous post link"
-msgid "<i class=\"fa fa-arrow-circle-left\"></i>%title"
+msgid "%title"
 msgstr ""
 
 #: inc/template-tags.php:58
 msgctxt "Next post link"
-msgid "%title <i class=\"fa fa-arrow-circle-right\"></i>"
+msgid "%title "
 msgstr ""
 
 #: inc/template-tags.php:102
@@ -357,6 +373,10 @@ msgstr ""
 
 #: searchform.php:8
 msgid "Search for:"
+msgstr ""
+
+#: searchform.php:9
+msgid "Search&hellip;"
 msgstr ""
 
 #: sidebar.php:21
