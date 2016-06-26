@@ -16,8 +16,8 @@ Presentation Lite is distributed under the terms of the GNU GPL
 Presentation Lite is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
 Font Awesome http://fortawesome.github.io/Font-Awesome/license/
-Font Awesome Licenses:	SIL Open Font License http://scripts.sil.org/OFL 
-						MIT License http://opensource.org/licenses/mit-license.html 
+Font Awesome Licenses:	SIL Open Font License http://scripts.sil.org/OFL
+						MIT License http://opensource.org/licenses/mit-license.html
 						CC BY 3.0 License – http://creativecommons.org/licenses/by/3.0/
 Copyright: Dave Gandy, http://fontawesome.io
 */
@@ -91,7 +91,7 @@ blockquote, q {
 }
 a img {
 	border: 0;
-}	
+}
 
 /*--------------------------------------------------------------
 Structure
@@ -133,9 +133,9 @@ textarea {
 h1, h2, h3, h4, h5, h6,
 .site-title {
 	clear: both;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
-	line-height: 1.6em;
+	line-height: 1.4;
 	margin-bottom: .4em;
 }
 h1, h2 {
