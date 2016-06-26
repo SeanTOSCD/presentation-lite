@@ -73,8 +73,12 @@ Yup. Any of the template files in the root of Presentation Lite can be copied to
 
 = 1.0.5 =
 * Added: theme support for title-tag (since WP 4.4)
+* Added: sanitization for the customizer logo uploader
+* Removed: outdated theme tags
 * Fixed: PHP notices in theme customizer
+* Fixed: incorrect textdomain
 * Tweak: site title and theme heading line-height
+* Tweak: updated language files after textdomain fix
 
 = 1.0.4 =
 * Tweak: Improved translation strings
