@@ -127,7 +127,7 @@ function presentation_lite_menu_home() { ?>
 	<div class="menu-testing-menu-container">
 		<ul class="menu nav-menu">
 			<li class="menu-item">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo get_bloginfo( 'description' ); ?>"><?php _e( 'Home', 'presentation-lite' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo get_bloginfo( 'description' ); ?>"><?php _e( 'Home', 'presentation_lite' ); ?></a>
 			</li>
 		</ul>
 	</div>
