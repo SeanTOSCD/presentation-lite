@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presentation Lite\n"
-"POT-Creation-Date: 2014-05-23 20:48-0600\n"
-"PO-Revision-Date: 2014-05-23 20:49-0600\n"
+"POT-Creation-Date: 2016-06-26 14:43-0800\n"
+"PO-Revision-Date: 2016-06-26 14:44-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.7.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -162,7 +162,7 @@ msgstr ""
 msgid "written by "
 msgstr ""
 
-#: content/content.php:31 functions.php:147
+#: content/content.php:31 functions.php:150
 msgid "Read More"
 msgstr ""
 
@@ -178,19 +178,19 @@ msgstr ""
 msgid "Header Menu (no drop-downs)"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:58
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:127
+#: functions.php:130
 msgid "Home"
 msgstr ""
 
-#: header.php:52
+#: header.php:51
 msgid "Menu"
 msgstr ""
 
-#: header.php:53
+#: header.php:52
 msgid "Skip to content"
 msgstr ""
 
@@ -272,60 +272,56 @@ msgstr ""
 msgid "Site Title (Logo) & Tagline"
 msgstr ""
 
-#: inc/customizer.php:41
+#: inc/customizer.php:44
 msgid "Custom Site Logo (replaces title)"
 msgstr ""
 
-#: inc/customizer.php:52
+#: inc/customizer.php:55
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:53
+#: inc/customizer.php:56
 msgid ""
 "Choose a color scheme for Presentation Lite. Individual styles can be "
 "overwritten in your child theme stylesheet."
 msgstr ""
 
-#: inc/customizer.php:62
+#: inc/customizer.php:65
 msgid "Choose a color scheme:"
 msgstr ""
 
-#: inc/customizer.php:76
+#: inc/customizer.php:79
 msgid "Content Options"
 msgstr ""
 
-#: inc/customizer.php:77
+#: inc/customizer.php:80
 msgid ""
 "Adjust the display of content on your website. All options have a default "
 "value that can be left as-is but you are free to customize."
 msgstr ""
 
-#: inc/customizer.php:86
+#: inc/customizer.php:89
 msgid "Post Feed Content"
 msgstr ""
 
-#: inc/customizer.php:102
+#: inc/customizer.php:105
 msgid "Show Post Footer on Single Posts?"
 msgstr ""
 
-#: inc/customizer.php:113
+#: inc/customizer.php:116
 msgid "Twitter Profile URL"
 msgstr ""
 
-#: inc/customizer.php:124
+#: inc/customizer.php:127
 msgid "Facebook Profile URL"
 msgstr ""
 
-#: inc/customizer.php:135
+#: inc/customizer.php:138
 msgid "Google Plus Profile URL"
 msgstr ""
 
-#: inc/customizer.php:146
+#: inc/customizer.php:149
 msgid "LinkedIn Profile URL"
-msgstr ""
-
-#: inc/customizer.php:157
-msgid "Navigation Menu(s)"
 msgstr ""
 
 #: inc/template-tags.php:21
