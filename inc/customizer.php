@@ -3,22 +3,22 @@
  * Theme Customizer
  */
 function presentation_lite_customize_register( $wp_customize ) {
-	
+
 	/** ===============
 	 * Extends CONTROLS class to add textarea
 	 */
 	class presentation_lite_customize_textarea_control extends WP_Customize_Control {
 		public $type = 'textarea';
 		public function render_content() { ?>
-	
+
 		<label>
 			<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
 			<textarea rows="5" style="width:98%;" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
 		</label>
-	
+
 		<?php }
 	}
-	
+
 
 	/** ===============
 	 * Site Title (Logo) & Tagline
@@ -26,15 +26,15 @@ function presentation_lite_customize_register( $wp_customize ) {
 	// section adjustments
 	$wp_customize->get_section( 'title_tagline' )->title = __( 'Site Title (Logo) & Tagline', 'presentation_lite' );
 	$wp_customize->get_section( 'title_tagline' )->priority = 10;
-	
+
 	//site title
 	$wp_customize->get_control( 'blogname' )->priority = 10;
 	$wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
-	
+
 	// tagline
 	$wp_customize->get_control( 'blogdescription' )->priority = 30;
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
-	
+
 	// logo uploader
 	$wp_customize->add_setting( 'presentation_lite_logo', array( 'default' => null ) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'presentation_lite_logo', array(
@@ -53,9 +53,9 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'description' 	=> __( 'Choose a color scheme for Presentation Lite. Individual styles can be overwritten in your child theme stylesheet.', 'presentation_lite' ),
 		'priority'   	=> 25,
 	) );
-	$wp_customize->add_setting( 'presentation_lite_stylesheet', array( 
-		'default' => 'blue', 
-		'sanitize_callback' => 'presentation_lite_sanitize_stylesheet' 
+	$wp_customize->add_setting( 'presentation_lite_stylesheet', array(
+		'default' => 'blue',
+		'sanitize_callback' => 'presentation_lite_sanitize_stylesheet'
 	) );
 	$wp_customize->add_control( 'presentation_lite_stylesheet', array(
 		'type' => 'select',
@@ -66,7 +66,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 			'purple'	=> 'Purple',
 			'red'		=> 'Red',
 			'gray'		=> 'Gray'
-	) ) );	
+	) ) );
 
 
 	/** ===============
@@ -78,9 +78,9 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'priority'   	=> 20,
 	) );
 	// post content
-	$wp_customize->add_setting( 'presentation_lite_post_content', array( 
+	$wp_customize->add_setting( 'presentation_lite_post_content', array(
 		'default' => 'full_content',
-		'sanitize_callback' => 'presentation_lite_sanitize_radio'  
+		'sanitize_callback' => 'presentation_lite_sanitize_radio'
 	) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'presentation_lite_post_content', array(
 		'label'		=> __( 'Post Feed Content', 'presentation_lite' ),
@@ -94,9 +94,9 @@ function presentation_lite_customize_register( $wp_customize ) {
 		),
 	) ) );
 	// show single post footer?
-	$wp_customize->add_setting( 'presentation_lite_post_footer', array( 
+	$wp_customize->add_setting( 'presentation_lite_post_footer', array(
 		'default' => 1,
-		'sanitize_callback' => 'presentation_lite_sanitize_checkbox'  
+		'sanitize_callback' => 'presentation_lite_sanitize_checkbox'
 	) );
 	$wp_customize->add_control( 'presentation_lite_post_footer', array(
 		'label'		=> __( 'Show Post Footer on Single Posts?', 'presentation_lite' ),
@@ -105,7 +105,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'type'      => 'checkbox',
 	) );
 	// twitter url
-	$wp_customize->add_setting( 'presentation_lite_twitter', array( 
+	$wp_customize->add_setting( 'presentation_lite_twitter', array(
 		'default' => null,
 		'sanitize_callback' => 'presentation_lite_sanitize_text'
 	) );
@@ -116,7 +116,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'priority'	=> 80,
 	) );
 	// facebook url
-	$wp_customize->add_setting( 'presentation_lite_facebook', array( 
+	$wp_customize->add_setting( 'presentation_lite_facebook', array(
 		'default' => null,
 		'sanitize_callback' => 'presentation_lite_sanitize_text'
 	) );
@@ -127,7 +127,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'priority'	=> 90,
 	) );
 	// google plus url
-	$wp_customize->add_setting( 'presentation_lite_gplus', array( 
+	$wp_customize->add_setting( 'presentation_lite_gplus', array(
 		'default' => null,
 		'sanitize_callback' => 'presentation_lite_sanitize_text'
 	) );
@@ -138,7 +138,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'priority'	=> 100,
 	) );
 	// linkedin url
-	$wp_customize->add_setting( 'presentation_lite_linkedin', array( 
+	$wp_customize->add_setting( 'presentation_lite_linkedin', array(
 		'default' => null,
 		'sanitize_callback' => 'presentation_lite_sanitize_text'
 	) );
@@ -148,16 +148,8 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'settings'	=> 'presentation_lite_linkedin',
 		'priority'	=> 110,
 	) );
-	
 
-	/** ===============
-	 * Navigation Menu(s)
-	 */
-	// section adjustments
-	$wp_customize->get_section( 'nav' )->title = __( 'Navigation Menu(s)', 'presentation_lite' );
-	$wp_customize->get_section( 'nav' )->priority = 40;
-	
-	
+
 
 	/** ===============
 	 * Static Front Page
@@ -178,7 +170,7 @@ function presentation_lite_sanitize_stylesheet( $input ) {
 		'red'		=> 'Red',
 		'gray'		=> 'Gray'
     );
- 
+
     if ( array_key_exists( $input, $valid ) ) {
         return $input;
     } else {
@@ -207,7 +199,7 @@ function presentation_lite_sanitize_radio( $input ) {
 		'excerpt'		=> 'Excerpt',
 		'full_content'	=> 'Full Content'
     );
- 
+
     if ( array_key_exists( $input, $valid ) ) {
         return $input;
     } else {
