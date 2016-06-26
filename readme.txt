@@ -35,13 +35,13 @@ Certainly! Here's exactly what you need to do.
 
 3. Inside of your new `style.css` file, add the following CSS:
 
-. . . . . . . . . . copy what's below . . . . . . . . . . . . 
+. . . . . . . . . . copy what's below . . . . . . . . . . . .
 
 
 /*
 	Theme Name: your_child_theme_name
 	Author: your_name
-	Author URI: 
+	Author URI:
 	Description: Child theme for Presentation Lite
 	Template: presentation-lite
 */
@@ -53,7 +53,7 @@ Theme customization starts here
 --------------------------------------------------------------*/
 
 
-. . . . . . . . . . copy what's above . . . . . . . . . . . . 
+. . . . . . . . . . copy what's above . . . . . . . . . . . .
 
 4. You may edit all of what you pasted EXCEPT for the `Template` line as well as the `@import` line. Leave those two lines alone or the child theme will not work properly.
 
@@ -70,6 +70,11 @@ Yup. Any of the template files in the root of Presentation Lite can be copied to
 
 
 == Changelog ==
+
+= 1.0.5 =
+* Added: theme support for title-tag (since WP 4.4)
+* Fixed: PHP notices in theme customizer
+* Tweak: site title and theme heading line-height
 
 = 1.0.4 =
 * Tweak: Improved translation strings
