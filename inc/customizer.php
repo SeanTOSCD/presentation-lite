@@ -36,7 +36,10 @@ function presentation_lite_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
 	// logo uploader
-	$wp_customize->add_setting( 'presentation_lite_logo', array( 'default' => null ) );
+	$wp_customize->add_setting( 'presentation_lite_logo', array(
+		'default' => null,
+		'sanitize_callback' => 'esc_url_raw',
+	) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'presentation_lite_logo', array(
 		'label'		=> __( 'Custom Site Logo (replaces title)', 'presentation_lite' ),
 		'section'	=> 'title_tagline',
