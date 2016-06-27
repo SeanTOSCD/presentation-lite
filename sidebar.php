@@ -11,14 +11,14 @@
 			</aside>
 
 			<aside id="archives" class="widget">
-				<h5 class="widget-title"><?php _e( 'Archives', 'presentation_lite' ); ?></h5>
+				<h5 class="widget-title"><?php _e( 'Archives', 'presentation-lite' ); ?></h5>
 				<ul>
 					<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 				</ul>
 			</aside>
 
 			<aside id="meta" class="widget">
-				<h5 class="widget-title"><?php _e( 'Meta', 'presentation_lite' ); ?></h5>
+				<h5 class="widget-title"><?php _e( 'Meta', 'presentation-lite' ); ?></h5>
 				<ul>
 					<?php wp_register(); ?>
 					<li><?php wp_loginout(); ?></li>

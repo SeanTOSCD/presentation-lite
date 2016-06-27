@@ -27,7 +27,7 @@ function presentation_lite_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 */
-	load_theme_textdomain( 'presentation_lite', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'presentation-lite', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -37,8 +37,8 @@ function presentation_lite_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'presentation_lite' ),
-		'header' => __( 'Header Menu (no drop-downs)', 'presentation_lite' )
+		'primary' => __( 'Primary Menu', 'presentation-lite' ),
+		'header' => __( 'Header Menu (no drop-downs)', 'presentation-lite' )
 	) );
 
 	// Enable support for HTML5 markup.
@@ -55,7 +55,7 @@ add_action( 'after_setup_theme', 'presentation_lite_setup' );
  */
 function presentation_lite_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Primary Sidebar', 'presentation_lite' ),
+		'name'          => __( 'Primary Sidebar', 'presentation-lite' ),
 		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -127,7 +127,7 @@ function presentation_lite_menu_home() { ?>
 	<div class="menu-testing-menu-container">
 		<ul class="menu nav-menu">
 			<li class="menu-item">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo get_bloginfo( 'description' ); ?>"><?php _e( 'Home', 'presentation_lite' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo get_bloginfo( 'description' ); ?>"><?php _e( 'Home', 'presentation-lite' ); ?></a>
 			</li>
 		</ul>
 	</div>
@@ -147,7 +147,7 @@ add_filter( 'excerpt_length', 'presentation_lite_custom_excerpt_length', 999 );
  * Replace excerpt ellipses with new ellipses and link to full article
  */
 function presentation_lite_excerpt_more( $more ) {
-	return '...</p> <div class="continue-reading"><a class="more-link" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'presentation_lite' ) . ' &rarr;</a></div>';
+	return '...</p> <div class="continue-reading"><a class="more-link" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'presentation-lite' ) . ' &rarr;</a></div>';
 }
 add_filter( 'excerpt_more', 'presentation_lite_excerpt_more' );
 

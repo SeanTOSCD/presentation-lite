@@ -23,22 +23,22 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h3 class="comments-title">
 			<?php
-				printf( _nx( 'One response to %2$s', '%1$s responses to %2$s', get_comments_number(), 'comments title', 'presentation_lite' ),
+				printf( _nx( 'One response to %2$s', '%1$s responses to %2$s', get_comments_number(), 'comments title', 'presentation-lite' ),
 					number_format_i18n( get_comments_number() ), '<span class="response-title">' . get_the_title() . '</span>' );
 			?>
 		</h3>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'presentation_lite' ); ?></h1>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'presentation-lite' ); ?></h1>
 			<div class="nav-previous">
 				<?php 
-				previous_comments_link( '<i class="fa fa-arrow-circle-left"></i>' . __( 'Older Comments', 'presentation_lite' ) ); 
+				previous_comments_link( '<i class="fa fa-arrow-circle-left"></i>' . __( 'Older Comments', 'presentation-lite' ) ); 
 				?>
 			</div>
 			<div class="nav-next">
 				<?php 
-				next_comments_link( __( 'Newer Comments', 'presentation_lite' ) . '<i class="fa fa-arrow-circle-right"></i>' );
+				next_comments_link( __( 'Newer Comments', 'presentation-lite' ) . '<i class="fa fa-arrow-circle-right"></i>' );
 				?>
 			</div>
 		</nav>
@@ -56,15 +56,15 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'presentation_lite' ); ?></h1>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'presentation-lite' ); ?></h1>
 			<div class="nav-previous">
 				<?php 
-				previous_comments_link( '<i class="fa fa-arrow-circle-left"></i>' . __( 'Older Comments', 'presentation_lite' ) ); 
+				previous_comments_link( '<i class="fa fa-arrow-circle-left"></i>' . __( 'Older Comments', 'presentation-lite' ) ); 
 				?>
 			</div>
 			<div class="nav-next">
 				<?php 
-				next_comments_link( __( 'Newer Comments', 'presentation_lite' ) . '<i class="fa fa-arrow-circle-right"></i>' ); 
+				next_comments_link( __( 'Newer Comments', 'presentation-lite' ) . '<i class="fa fa-arrow-circle-right"></i>' ); 
 				?>
 			</div>
 		</nav>
@@ -76,7 +76,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'presentation_lite' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'presentation-lite' ); ?></p>
 	<?php endif; ?>
 
 	<?php 
@@ -87,21 +87,21 @@ if ( post_password_required() ) {
 			array(
 				'id_form'				=> 'commentform',
 				'id_submit'				=> 'submit',
-				'title_reply'			=> __( 'Leave a Reply', 'presentation_lite' ),
-				'title_reply_to'		=> __( 'Leave a Reply to %s', 'presentation_lite' ),
-				'cancel_reply_link'		=> __( 'Cancel Reply', 'presentation_lite' ),
-				'label_submit'			=> __( 'Post Comment', 'presentation_lite' ),	
+				'title_reply'			=> __( 'Leave a Reply', 'presentation-lite' ),
+				'title_reply_to'		=> __( 'Leave a Reply to %s', 'presentation-lite' ),
+				'cancel_reply_link'		=> __( 'Cancel Reply', 'presentation-lite' ),
+				'label_submit'			=> __( 'Post Comment', 'presentation-lite' ),	
 				'comment_field'			=>  '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true">' . '</textarea></p>',	
-				'must_log_in'			=> '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'presentation_lite' ), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>',	
-				'logged_in_as'			=> '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'presentation_lite' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',	
+				'must_log_in'			=> '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'presentation-lite' ), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>',	
+				'logged_in_as'			=> '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'presentation-lite' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',	
 				'comment_notes_before'	=> '',	
 				'comment_notes_after'	=> '',	
 				'fields'				=> apply_filters( 'comment_form_default_fields', array(
-					'author'				=> '<p class="comment-form-author comment-form-field"><input id="author" name="author" type="text" placeholder="' . __( 'Name', 'presentation_lite' ) . '"' . $aria_req . ' /></p>',
+					'author'				=> '<p class="comment-form-author comment-form-field"><input id="author" name="author" type="text" placeholder="' . __( 'Name', 'presentation-lite' ) . '"' . $aria_req . ' /></p>',
 				
-					'email'					=> '<p class="comment-form-email comment-form-field"><input id="email" name="email" type="text" placeholder="' . __( 'Email', 'presentation_lite' ) . '"' . $aria_req . ' /></p>',
+					'email'					=> '<p class="comment-form-email comment-form-field"><input id="email" name="email" type="text" placeholder="' . __( 'Email', 'presentation-lite' ) . '"' . $aria_req . ' /></p>',
 				
-					'url'					=> '<p class="comment-form-url comment-form-field"><input id="url" name="url" type="text" placeholder="' . __( 'Website URL', 'presentation_lite' ) . '" /></p>'
+					'url'					=> '<p class="comment-form-url comment-form-field"><input id="url" name="url" type="text" placeholder="' . __( 'Website URL', 'presentation-lite' ) . '" /></p>'
 					)
 				),
 			) 

@@ -24,7 +24,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 	 * Site Title (Logo) & Tagline
 	 */
 	// section adjustments
-	$wp_customize->get_section( 'title_tagline' )->title = __( 'Site Title (Logo) & Tagline', 'presentation_lite' );
+	$wp_customize->get_section( 'title_tagline' )->title = __( 'Site Title (Logo) & Tagline', 'presentation-lite' );
 	$wp_customize->get_section( 'title_tagline' )->priority = 10;
 
 	//site title
@@ -41,7 +41,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'esc_url_raw',
 	) );
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'presentation_lite_logo', array(
-		'label'		=> __( 'Custom Site Logo (replaces title)', 'presentation_lite' ),
+		'label'		=> __( 'Custom Site Logo (replaces title)', 'presentation-lite' ),
 		'section'	=> 'title_tagline',
 		'settings'	=> 'presentation_lite_logo',
 		'priority'	=> 20
@@ -52,8 +52,8 @@ function presentation_lite_customize_register( $wp_customize ) {
 	 * Presentation Lite Design Options
 	 */
 	$wp_customize->add_section( 'presentation_lite_style_section', array(
-    	'title'       	=> __( 'Design Options', 'presentation_lite' ),
-		'description' 	=> __( 'Choose a color scheme for Presentation Lite. Individual styles can be overwritten in your child theme stylesheet.', 'presentation_lite' ),
+    	'title'       	=> __( 'Design Options', 'presentation-lite' ),
+		'description' 	=> __( 'Choose a color scheme for Presentation Lite. Individual styles can be overwritten in your child theme stylesheet.', 'presentation-lite' ),
 		'priority'   	=> 25,
 	) );
 	$wp_customize->add_setting( 'presentation_lite_stylesheet', array(
@@ -62,7 +62,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 	) );
 	$wp_customize->add_control( 'presentation_lite_stylesheet', array(
 		'type' => 'select',
-		'label' => __( 'Choose a color scheme:', 'presentation_lite' ),
+		'label' => __( 'Choose a color scheme:', 'presentation-lite' ),
 		'section' => 'presentation_lite_style_section',
 		'choices' => array(
 			'blue'		=> 'Blue',
@@ -76,8 +76,8 @@ function presentation_lite_customize_register( $wp_customize ) {
 	 * Content Options
 	 */
 	$wp_customize->add_section( 'presentation_lite_content_section', array(
-    	'title'       	=> __( 'Content Options', 'presentation_lite' ),
-		'description' 	=> __( 'Adjust the display of content on your website. All options have a default value that can be left as-is but you are free to customize.', 'presentation_lite' ),
+    	'title'       	=> __( 'Content Options', 'presentation-lite' ),
+		'description' 	=> __( 'Adjust the display of content on your website. All options have a default value that can be left as-is but you are free to customize.', 'presentation-lite' ),
 		'priority'   	=> 20,
 	) );
 	// post content
@@ -86,7 +86,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'presentation_lite_sanitize_radio'
 	) );
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'presentation_lite_post_content', array(
-		'label'		=> __( 'Post Feed Content', 'presentation_lite' ),
+		'label'		=> __( 'Post Feed Content', 'presentation-lite' ),
 		'section'	=> 'presentation_lite_content_section',
 		'settings'	=> 'presentation_lite_post_content',
 		'priority'	=> 10,
@@ -102,7 +102,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'presentation_lite_sanitize_checkbox'
 	) );
 	$wp_customize->add_control( 'presentation_lite_post_footer', array(
-		'label'		=> __( 'Show Post Footer on Single Posts?', 'presentation_lite' ),
+		'label'		=> __( 'Show Post Footer on Single Posts?', 'presentation-lite' ),
 		'section'	=> 'presentation_lite_content_section',
 		'priority'	=> 50,
 		'type'      => 'checkbox',
@@ -113,7 +113,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'presentation_lite_sanitize_text'
 	) );
 	$wp_customize->add_control( 'presentation_lite_twitter', array(
-		'label'		=> __( 'Twitter Profile URL', 'presentation_lite' ),
+		'label'		=> __( 'Twitter Profile URL', 'presentation-lite' ),
 		'section'	=> 'presentation_lite_content_section',
 		'settings'	=> 'presentation_lite_twitter',
 		'priority'	=> 80,
@@ -124,7 +124,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'presentation_lite_sanitize_text'
 	) );
 	$wp_customize->add_control( 'presentation_lite_facebook', array(
-		'label'		=> __( 'Facebook Profile URL', 'presentation_lite' ),
+		'label'		=> __( 'Facebook Profile URL', 'presentation-lite' ),
 		'section'	=> 'presentation_lite_content_section',
 		'settings'	=> 'presentation_lite_facebook',
 		'priority'	=> 90,
@@ -135,7 +135,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'presentation_lite_sanitize_text'
 	) );
 	$wp_customize->add_control( 'presentation_lite_gplus', array(
-		'label'		=> __( 'Google Plus Profile URL', 'presentation_lite' ),
+		'label'		=> __( 'Google Plus Profile URL', 'presentation-lite' ),
 		'section'	=> 'presentation_lite_content_section',
 		'settings'	=> 'presentation_lite_gplus',
 		'priority'	=> 100,
@@ -146,7 +146,7 @@ function presentation_lite_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'presentation_lite_sanitize_text'
 	) );
 	$wp_customize->add_control( 'presentation_lite_linkedin', array(
-		'label'		=> __( 'LinkedIn Profile URL', 'presentation_lite' ),
+		'label'		=> __( 'LinkedIn Profile URL', 'presentation-lite' ),
 		'section'	=> 'presentation_lite_content_section',
 		'settings'	=> 'presentation_lite_linkedin',
 		'priority'	=> 110,

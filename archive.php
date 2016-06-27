@@ -20,19 +20,19 @@ get_header(); ?>
 							single_tag_title();
 
 						elseif ( is_author() ) :
-							printf( __( 'Author: %s', 'presentation_lite' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Author: %s', 'presentation-lite' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'presentation_lite' ), '<span>' . get_the_date() . '</span>' );
+							printf( __( 'Day: %s', 'presentation-lite' ), '<span>' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'presentation_lite' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'presentation_lite' ) ) . '</span>' );
+							printf( __( 'Month: %s', 'presentation-lite' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'presentation-lite' ) ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'presentation_lite' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'presentation_lite' ) ) . '</span>' );
+							printf( __( 'Year: %s', 'presentation-lite' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'presentation-lite' ) ) . '</span>' );
 
 						else :
-							_e( 'Archives', 'presentation_lite' );
+							_e( 'Archives', 'presentation-lite' );
 
 						endif;
 					?>

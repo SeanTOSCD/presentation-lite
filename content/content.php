@@ -28,10 +28,10 @@
 				the_post_thumbnail( 'full', array( 'class' => 'featured-img' ) );
 			endif;
 			
-			the_content( __( 'Read More', 'presentation_lite' ) . ' &rarr;' );
+			the_content( __( 'Read More', 'presentation-lite' ) . ' &rarr;' );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'presentation_lite' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'presentation-lite' ),
 				'after'  => '</div>',
 			) );
 			?>

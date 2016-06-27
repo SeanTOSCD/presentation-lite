@@ -71,6 +71,10 @@ Yup. Any of the template files in the root of Presentation Lite can be copied to
 
 == Changelog ==
 
+= 1.0.7 =
+* Tweak: changed textdomain from 'presentation_lite' to 'presentation-lite'
+* Tweak: updated language files
+
 = 1.0.6 =
 * Fixed: incorrect textdomain (again)
 * Tweak: updated language files after textdomain fix (again)

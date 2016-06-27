@@ -18,15 +18,15 @@ function presentation_lite_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'presentation_lite' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'presentation-lite' ); ?></h1>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( '<i class="fa fa-arrow-circle-left"></i>' . __( 'Older posts', 'presentation_lite' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( '<i class="fa fa-arrow-circle-left"></i>' . __( 'Older posts', 'presentation-lite' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'presentation_lite' ) . '<i class="fa fa-arrow-circle-right"></i>' ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'presentation-lite' ) . '<i class="fa fa-arrow-circle-right"></i>' ); ?></div>
 			<?php endif; ?>
 
 		</div>
@@ -51,11 +51,11 @@ function presentation_lite_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'presentation_lite' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'presentation-lite' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', '<i class="fa fa-arrow-circle-left"></i>' . _x( '%title', 'Previous post link', 'presentation_lite' ) );
-				next_post_link( '<div class="nav-next">%link</div>', _x( '%title ', 'Next post link', 'presentation_lite' ) . '<i class="fa fa-arrow-circle-right"></i>' );
+				previous_post_link( '<div class="nav-previous">%link</div>', '<i class="fa fa-arrow-circle-left"></i>' . _x( '%title', 'Previous post link', 'presentation-lite' ) );
+				next_post_link( '<div class="nav-next">%link</div>', _x( '%title ', 'Next post link', 'presentation-lite' ) . '<i class="fa fa-arrow-circle-right"></i>' );
 			?>
 		</div>
 	</nav>
@@ -99,7 +99,7 @@ function presentation_lite_posted_on() {
 		?>
 	</span>
 	<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><i class="fa fa-comments"></i><?php comments_popup_link( __( 'Comments', 'presentation_lite' ), __( '1 Comment', 'presentation_lite' ), __( '% Comments', 'presentation_lite' ) ); ?></span>
+		<span class="comments-link"><i class="fa fa-comments"></i><?php comments_popup_link( __( 'Comments', 'presentation-lite' ), __( '1 Comment', 'presentation-lite' ), __( '% Comments', 'presentation-lite' ) ); ?></span>
 	<?php endif;
 }
 endif;

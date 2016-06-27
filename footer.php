@@ -12,7 +12,7 @@
 		<div class="main">
 			<footer id="colophon" class="site-footer inner" role="contentinfo">
 				<span class="site-info">			
-					<?php echo __( 'Built with WordPress and ', 'presentation_lite' ) . PRESENTATION_LITE_NAME; ?>
+					<?php echo __( 'Built with WordPress and ', 'presentation-lite' ) . PRESENTATION_LITE_NAME; ?>
 				</span>
 			</footer>
 		</div>

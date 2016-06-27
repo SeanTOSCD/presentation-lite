@@ -19,15 +19,15 @@
 			endif; 
 			the_content(); 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'presentation_lite' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'presentation-lite' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div>
 	<footer class="entry-meta">
 		<?php
-		$category_list = get_the_category_list( __( ', ', 'presentation_lite' ) );
-		$tag_list = get_the_tag_list( '', __( ', ', 'presentation_lite' ) );
+		$category_list = get_the_category_list( __( ', ', 'presentation-lite' ) );
+		$tag_list = get_the_tag_list( '', __( ', ', 'presentation-lite' ) );
 
 		if ( ! presentation_lite_categorized_blog() ) :
 			// This blog only has 1 category so we just need to worry about tags in the meta text
@@ -66,7 +66,7 @@
 	<div class="single-post-footer clear">
 		<div class="post-footer-author">
 			<?php echo get_avatar( get_the_author_meta( 'ID' ), 32, '', get_the_author_meta( 'display_name' ) ); ?>
-			<h5 class="author-name"><?php echo __( 'written by ', 'presentation_lite' ) . get_the_author_meta( 'display_name' ); ?></h5>
+			<h5 class="author-name"><?php echo __( 'written by ', 'presentation-lite' ) . get_the_author_meta( 'display_name' ); ?></h5>
 			<?php do_action( 'presentation_social_profiles' ); ?>
 		</div>
 		<?php if ( ! get_the_author_meta( 'description' ) == '' ) : ?>
